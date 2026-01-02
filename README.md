@@ -1,2 +1,13 @@
-# LeetCode-Solutions
-My solutions to LeetCode problems in Java, C++. Organized by topic for quick reference.
+# LeetCode Solutions 🚀
+
+This repository contains my personal solutions to LeetCode problems.
+
+## Topics Covered
+- Linked List
+- Arrays
+- Recursion
+
+## Language
+- Java
+
+All solutions are implemented and understood by me.
