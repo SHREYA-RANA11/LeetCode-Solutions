@@ -1,14 +1,21 @@
+import java.util.*;
+
 class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-       for(int i = 0 ; i<nums.size();i++){
-           for(int j = i+1; j<nums.size(); j++){
-            if(nums[i] + nums[j] == target){
-                return {i,j};
+    public int[] twoSum(int[] arr, int tar) {
+        Map<Integer, Integer> map = new HashMap<>();
+        int[] ans = new int[2];
+        
+        for (int i = 0; i < arr.length; i++) {
+            int first = arr[i];
+            int sec = tar - first;
+            
+            if (map.containsKey(sec)) {
+                ans[0] = i;
+                ans[1] = map.get(sec);
+                break;
             }
-           }
-       }
-       return {};
+            map.put(first, i);
+        }
+        return ans;
     }
-};
-//O(n^2)
+}
